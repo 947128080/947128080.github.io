@@ -1,0 +1,73 @@
+html,body{
+  height: 100%;
+}
+
+.main{
+
+  width: 100%;
+  height: 60%;
+  margin-left: 0;
+background-image: url('../images/c.jpg');
+background-repeat: repeat;
+
+}
+.content{
+  width: 40%;
+  float: left;
+}
+.content p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #ed4160;
+
+}
+.main1{
+  width: 100%;
+  height:500px;
+  background-image: url('../images/b.jpg');
+  background-repeat: repeat;
+}
+.xiao{
+  margin-left:-120px;
+  float: left;
+}
+div li:after{
+  content: "😊";
+}
+.neirong{
+  width: 40%;
+  margin-right: 20px;
+  float: right;
+}
+.dianhua{
+  background-color: #b8cbc0;
+}
+.top{
+  font-size: 18px;
+  font-family: cursive;
+  position: fixed;
+  top: 600px;
+  right: 30px;
+  background-color: #21dfd9;
+  opacity: 0.5;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+}
+.top a{
+  color: #e6fa04;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+.foot{
+  width: 100%;
+  height: 20px;
+  color: #de1414;
+  background-color: #96a0d9;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
