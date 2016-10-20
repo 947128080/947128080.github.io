@@ -13,7 +13,11 @@ app.config(['$routrProvider',function($routrProvider){
     templateUrl:'../tpl/tab3.html',
     controller:'bookController'
   })
-  .when('/tab4',{
+  .when('/about', {
+            templateUrl: '../tpl/about.html',
+            controller: ''
+        })
+  .when('/tab4/:id',{
     templateUrl:'../tpl/tab4.html',
     controller:'bookListController'
   })
