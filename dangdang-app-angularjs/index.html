@@ -6,14 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>当当网热搜榜</title>
   <link rel="stylesheet" href="assets/lib/weui/weui.css">
-  <link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
-<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div ng-app='app'ng-controller='mainController'>
-    <div ng-view></div>
-    <div class="weui_tabbar" ng-controller="mainController">
-    <a href="#/tab1" class="weui_tabbar_item weui_bar_item_on">
+    <div ng-view>
+
+    </div>
+    <div class="weui_tabbar footer-nav" ng-controller="mainController">
+    <a href="#/" class="weui_tabbar_item weui_bar_item_on">
       <div class="weui_tabbar_icon">
         <img src="assets/images/icon_nav_button.png" alt="">
       </div>
@@ -40,9 +41,8 @@
   </div>
 
   </div>
-  <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-  <script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
-  <script src="assets/lib/angular.js"></script>
+
+  <script src="assets/lib/angular.min.js"></script>
   <script src="assets/lib/angular-route.js"></script>
   <script src="assets/app.js"></script>
   <script  src="assets/api/service.js"></script>
