@@ -9,39 +9,40 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div ng-app='app'ng-controller='mainController'>
+
+  <div ng-app='app'>
+    <div class="page-bd"></div>
     <div ng-view>
 
     </div>
     <div class="weui_tabbar footer-nav" ng-controller="mainController">
-    <a href="#/" class="weui_tabbar_item weui_bar_item_on">
-      <div class="weui_tabbar_icon">
+    <a href="#/" ng-click='linkTo(0)' class="weui_tabbar_item weui_bar_item_on">
+        <div class="weui_tabbar_icon">
         <img src="assets/images/icon_nav_button.png" alt="">
-      </div>
-      <p class="weui_tabbar_label">首页</p>
+        </div>
+        <p class="weui_tabbar_label">首页</p>
     </a>
-    <a href="#/tab2" class="weui_tabbar_item">
-      <div class="weui_tabbar_icon">
+    <a href="#/tab2" ng-click='linkTo(1)' class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
         <img src="assets/images/icon_nav_cell.png" alt="">
-      </div>
-      <p class="weui_tabbar_label">工作经历</p>
+        </div>
+        <p class="weui_tabbar_label">工作经历</p>
     </a>
-    <a href="#/tab3" class="weui_tabbar_item">
-      <div class="weui_tabbar_icon">
+    <a href="#/tab3" ng-click='linkTo(2)' class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
         <img src="assets/images/icon_nav_toast.png" alt="">
-      </div>
-      <p class="weui_tabbar_label">当当热销</p>
+        </div>
+        <p class="weui_tabbar_label">当当热销</p>
     </a>
-    <a href="#/tab4" class="weui_tabbar_item">
-      <div class="weui_tabbar_icon">
+    <a href="#/tab4" ng-click='linkTo(3)' class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
         <img src="assets/images/icon_nav_dialog.png" alt="">
-      </div>
-      <p class="weui_tabbar_label">关于我</p>
+        </div>
+        <p class="weui_tabbar_label">关于我</p>
     </a>
   </div>
-
   </div>
-
+</div>
   <script src="assets/lib/angular.min.js"></script>
   <script src="assets/lib/angular-route.js"></script>
   <script src="assets/app.js"></script>
