@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>angularjs-我改了html</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/ionic/1.3.1/css/ionic.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+    <style>
+        /*在使用ngRoute模块的时候
+    在页面切换的时候会添加ng-enter样式
+    移除时会添加ng-leave样式
+    */
+
+        .ng-enter {
+            animation: slideInLeft 2s;
+        }
+
+        .ng-leave {
+            animation: slideOutRight 2s;
+        }
+    </style>
+</head>
+<body>
+    <div ng-app='app'>
+        <div ng-view></div>
+        <div class="tabs tabs-icon-top tabs-royal">
+            <a class="tab-item" href="#/">
+                <i class="icon ion-home"></i> 📚
+            </a>
+            <a class="tab-item active" href="#/are">
+                <i class="icon ion-star"></i> 技能
+            </a>
+            <a class="tab-item" href="#/list">
+                <i class="icon ion-gear-a"></i> 联系
+            </a>
+        </div>
+    </div>
+    <script src='http://cdn.bootcss.com/ionic/1.3.1/js/ionic.bundle.js'></script>
+    <script src="/bundle.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>
